@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilões</title>
+    <link rel="stylesheet" href="stylesViloes.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="left-header">
+            <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt=""></a>
+        </div>
+        <div class="right-header">
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"> <img class="insta"
+                    src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face"
+                    src="facebook.png" alt="Facebook" class="icon"></a>
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp"
+                    alt="Email" class="icon"></a>
+        </div>
+
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <h1>Vilões</h1>
+
+    <main>
+        <section class="image-section">
+            <div class="image-container">
+                <a href="orochimaru.html"><img src="orochimaruss.png" alt="Imagem 1" class="main-image"></a>
+                <div class="info-box">Orochimaru (大蛇丸)
+                    Orochimaru é um dos lendários Sannin de Konoha, conhecido por sua obsessão por poder e pela
+                    imortalidade. Ele é um mestre das artes ninjas proibidas e tem uma personalidade manipuladora e
+                    cruel. Sua busca incessante pela perfeição o levou a abandonar sua vila e realizar experimentos
+                    sombrios para alcançar seus objetivos. <br><br><br></div>
+            </div>
+            <div class="image-container">
+                <a href="kabuto.html"><img src="kabutoooo.png" alt="Imagem 1" class="main-image"></a>
+                <div class="info-box">Kabuto Yakushi (薬師カブト)
+                    Kabuto é um ninja altamente inteligente e habilidoso que atua como braço direito de Orochimaru.
+                    Inicialmente servindo como espião, ele se destaca por seu vasto conhecimento em medicina e
+                    habilidades de espionagem. Apesar de sua aparente lealdade, Kabuto tem suas próprias ambições e se
+                    transforma em uma ameaça perigosa.<br><br><br></div>
+            </div>
+
+            <div class="image-container">
+                <a href="haku.html"><img src="haku.png" alt="Imagem 2" class="main-image"></a>
+                <div class="info-box">Haku (白)
+                    Haku é um ninja órfão de Kirigakure, leal a Zabuza. Apesar de sua aparência delicada e natureza
+                    gentil, ele é um combatente formidável, utilizando a técnica Kekkei Genkai de manipulação de gelo.
+                    Sua dedicação inabalável a Zabuza é um reflexo de seu desejo de ser útil a quem ele considera sua
+                    família. <br><br><br><br><br></div>
+            </div>
+            <div class="image-container">
+                <a href="zabuza.html"><img src="zab.png" alt="Imagem 3" class="main-image"></a>
+                <div class="info-box">Zabuza Momochi (桃地再不斬)
+                    Zabuza é um ex-membro dos Sete Espadachins da Névoa Oculta, conhecido como "O Demônio da Névoa
+                    Oculta". Ele é um ninja implacável e ambicioso, famoso por sua força e maestria com a espada. Apesar
+                    de sua brutalidade, Zabuza demonstra uma profunda ligação emocional com Haku, revelando seu lado
+                    mais humano. <br><br><br></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+    <br><br>
+</body>
+
+</html>

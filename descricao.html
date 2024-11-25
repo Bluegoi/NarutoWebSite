@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naruto Clássico</title>
+<link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+<link rel="stylesheet" href="StyleMain.css">
+<style>
+body {
+    margin: 0;
+    background-image: url('naru\ back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9900;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.face, .insta, .email {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-header {
+    display: flex;
+    gap: 15px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.description-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .square-container {
+        justify-content: center;
+    }
+    .square {
+        width: 280px;
+        height: 180px;
+    }
+    .left-header, .right-header {
+        font-size: 20px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .right-header {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .left-header, .right-header {
+        font-size: 18px;
+    }
+    .square-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .square {
+        width: 250px;
+        height: 150px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .right-header {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .square {
+        width: 220px;
+        height: 140px;
+    }
+    .left-header, .right-header {
+        font-size: 16px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .right-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .hamburger.active + .right-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<div class="left-header">
+    <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a>
+</div>
+<div class="right-header">
+    <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank">
+        <img class="insta" src="insta.jpg" alt="Instagram" class="icon">
+    </a>
+    <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank">
+        <img class="face" src="facebook.png" alt="Facebook" class="icon">
+    </a>
+    <a href="formulario.html" target="_blank">
+        <img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon">
+    </a>
+    <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+</header>
+<section class="description-section">
+<h2>Naruto Clássico</h2>
+<p>
+Naruto é uma série de anime que segue a história de um jovem ninja chamado Naruto Uzumaki. Sonhando em se tornar o Hokage, o líder de sua vila, Naruto enfrenta muitos desafios, tanto internos quanto externos, enquanto tenta ser reconhecido pelos outros. Ele é órfão e carrega o espírito de uma fera poderosa, a raposa de nove caudas, dentro de si. Durante sua jornada, Naruto faz amizades, enfrenta inimigos e aprende o verdadeiro significado de ser um herói. Esta história cativante é uma mistura de ação, emoção e lealdade, explorando temas de amizade, perseverança e superação.
+</p>
+</section>
+<script>
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const rightHeader = document.querySelector('.right-header');
+hamburgerIcon.addEventListener('click', () => {
+    rightHeader.classList.toggle('active');
+});
+</script>
+</body>
+</html>

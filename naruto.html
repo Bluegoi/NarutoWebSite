@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+    <link rel="stylesheet" href="naruto.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="time7.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-info">
+            <div class="hero-image">
+                <img src="Naruto_Uzumaki_by_AiKawaiiChan_on_DeviantArt-removebg-preview.png" alt="Naruto" class="hero-img">
+            </div>
+            <div class="hero-description">
+                <h2>Naruto Uzumaki (うずまきナルト)</h2>
+                <p><strong>Descrição:</strong> Naruto Uzumaki é o protagonista de *Naruto* e o ninja mais persistente e determinado da Vila da Folha. Criado como órfão e rejeitado pela maioria devido ao fato de abrigar a raposa de nove caudas, Kurama, Naruto busca o reconhecimento e a aceitação dos outros. Ele possui um enorme desejo de se tornar Hokage, o líder da vila, e provar seu valor para aqueles que duvidaram dele. Ao longo da série, Naruto desenvolve suas habilidades ninjas, tornando-se um dos ninjas mais poderosos e influentes, além de um líder que inspira outros com sua força de vontade indomável.</p>
+                <p><strong>Classe:</strong> Ninja, Genin</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha)</p>
+                <p><strong>Poderes:</strong> Rasengan, transformação de chakra (incluindo a transformação da raposa de nove caudas), *Shadow Clone Jutsu*, *Kurama Chakra Mode*, *Sage Mode*, habilidades aprimoradas de ninjutsu, taijutsu e grandes capacidades de recuperação de chakra.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

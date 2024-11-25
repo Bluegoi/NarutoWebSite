@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario - Mande uma Mensagem</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('naru\ back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif; 
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff9900;
+            padding: 15px 20px;
+            color: white;
+            position: relative;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        .face, .insta, .email {
+            width: 50px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .left-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .right-header {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            border-radius: 5px;
+        }
+
+        
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 30px;
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .form-container textarea {
+            height: 150px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #cc7a00;
+        }
+
+        
+        @media (max-width: 1024px) {
+            .logo {
+                width: 150px;
+            }
+
+            .left-header, .right-header {
+                font-size: 20px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .right-header {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .left-header, .right-header {
+                font-size: 18px;
+            }
+
+            .logo {
+                width: 120px;
+            }
+
+            .right-header {
+                margin-top: 10px;
+            }
+
+            .hamburger.active + .right-header {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 100px;
+            }
+
+            .left-header, .right-header {
+                font-size: 16px;
+            }
+
+            .right-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hamburger.active + .right-header {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+            <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a>
+        </div>
+        <div class="right-header">
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank">
+                <img class="insta" src="insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank">
+                <img class="face" src="facebook.png" alt="Facebook">
+            </a>
+            <a href="formulario.html" target="_blank">
+                <img class="email" src="icon-email-material-design-512.webp" alt="Email">
+            </a>
+           
+            <div class="hamburger" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Mande uma mensagem para nossa equipe</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Previne o envio real do formulario
+            
+            // Exibir alerta de mensagem enviada
+            alert('Sua mensagem foi enviada com sucesso!');
+            
+            // Limpar campos do formulario
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+
+</body>
+</html>

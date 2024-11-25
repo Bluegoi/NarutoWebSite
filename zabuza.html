@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilão - Zabuza</title>
+    <link rel="stylesheet" href="zabuza.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="viloes.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="villain-info">
+            <div class="villain-image">
+                <img src="zab.png" alt="Zabuza" class="villain-img">
+            </div>
+            <div class="villain-description">
+                <h2>Zabuza Momochi (桃地再不斩)</h2>
+                <p><strong>Descrição:</strong> Zabuza é um dos primeiros grandes antagonistas apresentados em *Naruto*, um ex-integrante da temida *Brigada dos Nuvens Sangrentas* da Vila da Névoa. Conhecido por sua brutalidade e habilidade com a espada, Zabuza é um ninja altamente capacitado e um mestre na arte do *Kenjutsu* (técnicas com espadas). Ele é temido por sua frieza e sua determinação, mas também possui uma lealdade complexa, especialmente em relação a Haku, a quem considera quase como um filho.</p>
+                <p><strong>Classe:</strong> Ninja, Espadachim</p>
+                <p><strong>Vila:</strong> Vila da Névoa (Kiri)</p>
+                <p><strong>Poderes:</strong> *Kenjutsu* (técnicas com espada), *Jutsu de Névoa* (técnicas de ocultação e confusão com névoa densa), *Mizu Bunshin no Jutsu* (Clone de Água), *Kiri no Jutsu* (Técnica da Névoa de Sangrento), grande habilidade com a espada *Kubikiribōchō* (a espada da decapitação), força física superior e resistência.</p>
+            </div>
+            
+            
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

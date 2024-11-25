@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilão - Haku</title>
+    <link rel="stylesheet" href="haku.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="viloes.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="villain-info">
+            <div class="villain-image">
+                <img src="haku.png" alt="Haku" class="villain-img">
+            </div>
+            <div class="villain-description">
+                <h2>Haku (白)</h2>
+                <p><strong>Descrição:</strong> Haku é um personagem marcante da série *Naruto*, conhecido por sua habilidade em controlar o *Kekkai Genkai* do *Hyoton* (Liberação de Gelo). Ele foi criado e treinado por Zabuza Momochi, outro dos notáveis *Nukenin* da Vila da Névoa, e inicialmente aparece como um assistente fiel e silencioso. Haku tem uma personalidade gentil e doce, mas também é trágico, já que foi forçado a viver uma vida de sofrimento devido às circunstâncias de seu nascimento e aos eventos que ocorreram com ele e sua mãe.</p>
+                <p><strong>Classe:</strong> Ninja</p>
+                <p><strong>Vila:</strong> Vila da Névoa (Kiri)</p>
+                <p><strong>Poderes:</strong> Manipulação de gelo (Hyoton), técnicas de neve e gelo, agilidade extrema, habilidades em taijutsu, *Jutsu de Cristal de Gelo* e *Espada de Gelo*, além de seu estilo de luta baseado em velocidade e precisão. Haku pode criar espelhos de gelo que refletem suas ações, permitindo-lhe se mover em alta velocidade e enganar seus oponentes com a manipulação de sua imagem.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

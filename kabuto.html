@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilão - Kabuto</title>
+    <link rel="stylesheet" href="kabuto.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="viloes.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="villain-info">
+            <div class="villain-image">
+                <img src="kabutoooo.png" alt="Orochimaru" class="villain-img">
+            </div>
+            <div class="villain-description">
+                <h2>Kabuto Yakushi (薬師カブト)</h2>
+                <p><strong>Descrição:</strong> Kabuto é um personagem complexo e intrigante, inicialmente apresentado como um médico ninja que trabalha ao lado de Orochimaru. Ao longo da série, revela-se um estrategista e manipulador habilidoso, com uma busca incansável por poder. Ele é um dos poucos personagens a desenvolver uma lealdade cega para com Orochimaru, mas acaba se tornando uma figura independente, com objetivos próprios, especialmente quando obtém poderosas habilidades através da fusão de DNA de diversos ninjas e de experimentos em seu próprio corpo.</p>
+                <p><strong>Classe:</strong> Ninja Médico, Espião</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha), posteriormente associado a Orochimaru e à organização Akatsuki.</p>
+                <p><strong>Poderes:</strong> Ninjutsu médico, regeneração avançada, controle de células, técnicas de invocação, manipulação de DNA, técnicas de imortalidade, uso do *Cemitérios de Corpo* e o uso do *Selo de Rikudou*.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

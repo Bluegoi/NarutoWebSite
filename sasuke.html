@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasuke</title>
+    <link rel="stylesheet" href="Sasuke.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="time7.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-info">
+            <div class="hero-image">
+                <img src="Sasuke_Uchiha_render__Ultimate_Ninja_3__by_maxiuchiha22_on_DeviantArt-removebg-preview.png" alt="Sasuke" class="hero-img">
+            </div>
+            <div class="hero-description">
+                <h2>Sasuke Uchiha (うちはサスケ)</h2>
+                <p><strong>Descrição:</strong> Sasuke Uchiha é um dos últimos sobreviventes do clã Uchiha, marcado pelo massacre de sua família pelas mãos de seu irmão mais velho, Itachi Uchiha. Ele é inicialmente apresentado como um gênio prodígio e o rival de Naruto Uzumaki. Ao longo da série, Sasuke segue um caminho sombrio em busca de vingança, abandonando a Vila da Folha para ganhar poder. Apesar de suas escolhas controversas, ele é uma figura complexa, movida por lealdade ao seu clã e uma busca por justiça. Com o tempo, Sasuke se redime e se torna um protetor da vila.</p>
+                <p><strong>Classe:</strong> Ninja, Avenger</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha), mais tarde um ninja errante.</p>
+                <p><strong>Poderes:</strong> Sharingan, Mangekyō Sharingan, Rinnegan, *Chidori*, técnicas de manipulação de relâmpago e fogo, invocação de serpentes e falcões, habilidades de taijutsu e genjutsu, e o uso de técnicas de nível elevado, como o *Susanoo* e o *Amaterasu*.</p>
+            </div>
+            
+            
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html> 

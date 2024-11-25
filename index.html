@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+    <link rel="stylesheet" href="StyleMain.css">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+            <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a>
+        </div>
+        <div class="right-header">
+            
+            <a href="descricao.html" target="_blank">
+                <img class="insta" src="konoha-konohagakure-hidden-leaf-village-600nw-1987977443.webp" alt="Instagram" class="icon">
+            </a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank">
+                <img class="insta" src="insta.jpg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank">
+                <img class="face" src="facebook.png" alt="Facebook" class="icon">
+            </a>
+            <a href="formulario.html" target="_blank">
+                <img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon">
+            </a>
+            
+        </div>
+       
+    </header>
+
+    <main>
+        <div class="square-container">
+            <div class="left-squares">
+                <div class="square">
+                    <a href="time7.html"><img src="Team 7.jpg" alt="Imagem 1">
+                    <p>Time 7</p></a>
+                </div>
+                <div class="square">
+                    <a href="personagens.html"><img src="personagens.jpg" alt="Imagem 2">
+                    <p>Personagens Marcantes</p></a>
+                </div>
+            </div>
+            <div class="right-squares">
+                <div class="square">
+                    <a href="viloes.html"><img src="Orochimaru.PNG.webp" alt="Imagem 3">
+                    <p>Vilões</p></a>
+                </div>
+                <div class="square">
+                    <a href="episodios.html"><img src="lee.jpg" alt="Imagem 4">
+                    <p>Episódios Marcantes</p></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const rightHeader = document.querySelector('.right-header');
+
+        hamburger.addEventListener('click', () => {
+            rightHeader.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

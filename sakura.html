@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura</title>
+    <link rel="stylesheet" href="Sakura.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="time7.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-info">
+            <div class="hero-image">
+                <img src="download__5_-removebg-preview.png" alt="Sakura" class="hero-img">
+            </div>
+            <div class="hero-description">
+                <h2>Sakura Haruno (春野サクラ)</h2>
+                <p><strong>Descrição:</strong> Sakura Haruno é uma das protagonistas de *Naruto* e uma ninja da Vila da Folha, inicialmente conhecida por suas habilidades de cura e força física impressionante. Ao longo da série, ela se desenvolve significativamente, especialmente em termos de suas habilidades de combate. Sakura é uma das mais poderosas ninjas médicas e, mais tarde, adquire uma enorme força física, após treinar sob a orientação da lendária Tsunade. Ela é leal, inteligente e determinada, embora no início da série, seu foco fosse mais em suas emoções e seu amor por Sasuke.</p>
+                <p><strong>Classe:</strong> Ninja Médico, Genin, Jonin</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha)</p>
+                <p><strong>Poderes:</strong> Grande força física, ninjutsu médico, *Chakra Control*, *Creation Rebirth* (Técnica de regeneração), *Superhuman Strength* (Força sobre-humana), habilidade em genjutsu e taijutsu, e mais tarde, domínio de técnicas de invocação e combate com jutsus poderosos de alto nível.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

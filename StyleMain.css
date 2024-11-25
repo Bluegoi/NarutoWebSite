@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    background-image: url('naru\ back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 20px;
+    color: white;
+    border-image-width: 2px;
+    position: relative; 
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.face, .insta, .email {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+.leaf{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-header {
+    display: flex;
+    gap: 15px;
+}
+
+.right-header .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.square-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.left-squares, .right-squares {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.square {
+    position: relative;
+    width: 340px;
+    height: 220px;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;  
+}
+
+
+.square:hover {
+    transform: scale(1.05);  
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    font-size: 28px;
+    z-index: 1;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    
+    body {
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px; 
+    }
+
+    .left-header, .right-header {
+        font-size: 20px; 
+    }
+
+    .square-container {
+        justify-content: center; 
+    }
+
+    .square {
+        width: 280px;
+        height: 180px;
+    }
+
+    
+    .right-header {
+        display: flex; 
+        gap: 15px;
+    }
+
+    
+    .right-header .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+    .right-header {
+        display: flex;
+        position: absolute;
+        top: -10px; 
+        right: 0px; 
+        gap: 15px; 
+        align-items: center; 
+        background-color: #ff9900; 
+        padding: 5px; 
+        border-radius: 8px; 
+    }
+    
+    .face, .insta, .email {
+        width: 50px;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 0;
+    }
+    
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    .left-header, .right-header {
+        font-size: 18px; 
+    }
+
+    .square-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .square {
+        width: 250px;
+        height: 150px;
+    }
+
+    .logo {
+        width: 120px; 
+    }
+
+    .right-header {
+        margin-top: 10px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .square {
+        width: 220px;
+        height: 140px;
+    }
+
+    .left-header, .right-header {
+        font-size: 16px; 
+    }
+
+    .logo {
+        width: 100px; 
+    }
+
+    .right-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    
+    .hamburger.active + .right-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

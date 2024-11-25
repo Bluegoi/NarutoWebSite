@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakashi</title>
+    <link rel="stylesheet" href="kakashi.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="time7.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-info">
+            <div class="hero-image">
+                <img src="Kakashi-removebg-preview.png" alt="Kakashi" class="hero-img">
+            </div>
+            <div class="hero-description">
+                <h2>Kakashi Hatake (はたけカカシ)</h2>
+                <p><strong>Descrição:</strong> Kakashi Hatake é um dos ninjas mais habilidosos da Vila da Folha e é amplamente reconhecido por sua destreza em combate e seu icônico Sharingan. Inicialmente, ele é apresentado como um líder de equipe, mentor de Naruto, Sasuke e Sakura, e sua experiência e sabedoria são essenciais para o desenvolvimento dos protagonistas. Kakashi é um ninja com um passado misterioso, marcado pela perda de seu amigo Obito Uchiha, o que molda suas ações e valores. Apesar de sua aparência relaxada e indiferente, Kakashi é um líder atento e possui uma enorme carga de responsabilidades.</p>
+                <p><strong>Classe:</strong> Ninja, Jonin, Líder de Equipe</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha)</p>
+                <p><strong>Poderes:</strong> Sharingan, Chidori, grande habilidade em ninjutsu, taijutsu e genjutsu, mestre em técnicas de combate com diversos tipos de armas e jutsus, incluindo técnicas de invocação e camuflagem. Kakashi também possui um vasto conhecimento em diversas técnicas ninjas, o que o torna um estrategista excepcional.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

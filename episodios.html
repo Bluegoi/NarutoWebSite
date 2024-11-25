@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episódios Favoritos</title>
+    <link rel="stylesheet" href="episodios.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <a href="index.html">
+                <img class="logo" src="naruto_logo_800w.webp" alt="Logo">
+            </a>
+        </div>
+        <div class="right-header">
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank">
+                <img class="insta" src="insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank">
+                <img class="face" src="facebook.png" alt="Facebook">
+            </a>
+            <a href="Formulário.html" target="_blank">
+                <img class="email" src="icon-email-material-design-512.webp" alt="Email">
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="favorite-episodes">
+            <h1>Episódios Marcantes</h1>
+            <div class="episode-list">
+                <div class="episode-card">
+                    <img src="Fan-Art by ito @_memo110.jpg" alt="Rock Lee vs Gaara">
+                    <div class="episode-info">
+                        <h2>Gaara Contra Rock Lee: O Poder da Juventude Explode!</h2>
+                        <p><strong>Episódio:</strong> 48</p>
+                        <p><strong>Descrição:</strong> No episódio 48 de Naruto Clássico, intitulado "Gaara Contra Rock Lee: O Poder da Juventude Explode!", o confronto entre Rock Lee e Gaara continua nas preliminares do Exame Chunin. Rock Lee demonstra sua determinação e habilidades únicas ao remover seus pesos limitadores...</p>
+                        <button class="trailer-btn" data-video="https://www.youtube.com/embed/In9eYQtLUwA?si=POc2an1JxL2EOK38">Assistir</button>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="Naruto vs Sasuke - Naruto.jpg" alt="Naruto vs Sasuke">
+                    <div class="episode-info">
+                        <h2>O Fim das Lágrimas</h2>
+                        <p><strong>Episódio:</strong> 134</p>
+                        <p><strong>Descrição:</strong> No episódio 134 de Naruto Clássico, intitulado "O Fim das Lágrimas", ocorre o clímax do intenso confronto entre Naruto e Sasuke no Vale do Fim...</p>
+                        <button class="trailer-btn" data-video="https://www.youtube.com/embed/ZtqkOgVOqdw?si=v_-KJ-df7aW0PuDs">Assistir</button>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="neji vs naruto.jpg" alt="Neji vs Naruto">
+                    <div class="episode-info">
+                        <h2>O Verdadeiro Poder do Fracassado!</h2>
+                        <p><strong>Episódio:</strong> 62</p>
+                        <p><strong>Descrição:</strong> No episódio 62 de Naruto Clássico, intitulado "O Verdadeiro Poder do Fracassado!", Naruto enfrenta Neji na terceira fase do Exame Chunin...</p>
+                        <button class="trailer-btn" data-video="https://www.youtube.com/embed/AawzR3z6DLk?si=6YMNVc8wAuEyO2A4">Assistir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="trailerModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+
+
+
+            <iframe src="" id="trailerIframe"></iframe> 
+
+
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.trailer-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const videoUrl = event.target.getAttribute('data-video');
+                document.getElementById('trailerIframe').src = videoUrl;
+                document.getElementById('trailerModal').style.display = 'block';
+            });
+        });
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('trailerModal').style.display = 'none';
+            document.getElementById('trailerIframe').src = ''; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilão - Orochimaru</title>
+    <link rel="stylesheet" href="vilao.css">
+    <link rel="shortcut icon" href="uzumaki.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+           <a href="index.html"><img class="logo" src="naruto_logo_800w.webp" alt="Logo"></a> 
+        </div>
+        <div class="right-header">
+            <a href="viloes.html" ><img class="insta" src="return.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.instagram.com/uzumaki.brasil/?hl=pt-br" target="_blank"><img class="insta" src="insta.jpg" alt="Instagram" class="icon"></a>
+            <a href="https://www.facebook.com/narutoofficialsns/?locale=pt_BR" target="_blank"><img class="face" src="facebook.png" alt="Facebook" class="icon"></a> 
+            <a href="formulario.html" target="_blank"><img class="email" src="icon-email-material-design-512.webp" alt="Email" class="icon"></a>
+        </div>
+        
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="villain-info">
+            <div class="villain-image">
+                <img src="orochimaruss.png" alt="Orochimaru" class="villain-img">
+            </div>
+            <div class="villain-description">
+                <h2>Orochimaru (大蛇丸)</h2>
+                <p><strong>Descrição:</strong> Orochimaru é um dos lendários Sannin de Konoha, conhecido por sua obsessão por poder e imortalidade. Ele é um mestre das artes ninjas proibidas e tem uma personalidade manipuladora e cruel.</p>
+                <p><strong>Classe:</strong> Ninja, Ninja Cientista</p>
+                <p><strong>Vila:</strong> Vila da Folha (Konoha)</p>
+                <p><strong>Poderes:</strong> Técnicas ninjas proibidas, regeneração, invocação de serpentes, controle de corpos, manipulação de células, técnicas de imortalidade.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-icon");
+        const rightHeader = document.querySelector(".right-header");
+
+        hamburger.addEventListener("click", () => {
+            rightHeader.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
