@@ -23,6 +23,6 @@ Bem-vindo ao **NarutoWebSite**, um site dedicado ao anime Naruto Clássico! Aqui
 
 - **HTML5**: Estrutura das páginas.
 - **CSS3**: Estilização e design responsivo.
-- **JavaScript**: Funcionalidades interativas (ex: menu hambúrguer).
+- **JavaScript**: Funcionalidades interativas.
 
 
