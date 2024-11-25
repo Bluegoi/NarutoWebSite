@@ -12,7 +12,7 @@ Bem-vindo ao **NarutoWebSite**, um site dedicado ao anime Naruto Clássico! Aqui
 ## Como Usar o Site
 
 1. A tela inicial contará com os seguintes links:
-2. - **Header:**  O Header contará com links de Descrição de Naruto, Facebook, Instagram e Formulário.
+   - **Header:**  O Header contará com links de Descrição de Naruto, Facebook, Instagram e Formulário.
    - **Time7:** Ao clicar nessa área poderá ver os personagens relacionado ao time 7.
    - **Personagens Marcantes:** Informações detalhadas sobre alguns personagens de naruto.
    - **Vilões:** Conheça os maiores vilões de Naruto Clássico.
@@ -25,7 +25,4 @@ Bem-vindo ao **NarutoWebSite**, um site dedicado ao anime Naruto Clássico! Aqui
 - **CSS3**: Estilização e design responsivo.
 - **JavaScript**: Funcionalidades interativas (ex: menu hambúrguer).
 
-## Como Contribuir
-
-Quer contribuir para o desenvolvimento do site? Siga as etapas abaixo:
 
